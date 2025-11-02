@@ -17,5 +17,5 @@ jobs:
       users: actions/checkout@v2
 
       -name: print message
-      runs: echo "welcome to github actions"
+      run: echo "welcome to github actions"
 
