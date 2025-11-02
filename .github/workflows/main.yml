@@ -1,0 +1,21 @@
+#name of the workflow/pipeline
+name: github action demo pipeline #name of the pipeline
+
+#trigger event
+# when github action call these evemt 
+on:
+  push:
+    branches:
+      - main
+
+jobs: 
+  demo-job:
+    runs-on: ubnutu-latest
+    
+    steps:
+      -name: checkout code
+      users: actions/checkout@v2
+
+      -name: print message
+      runs: echo "welcome to github actions"
+
